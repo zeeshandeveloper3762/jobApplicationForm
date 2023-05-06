@@ -1,0 +1,82 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ccc;
+}
+
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.applyBox{
+    max-width: 600px;
+    padding: 20px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 50px;
+    box-shadow: 4px 3px 5px rgba(1, 1, 1, .5);
+    border-radius: 10px;
+    
+
+}
+
+.smallTitle{
+
+    font-size: 15px;
+}
+
+.formContainer{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.formControl{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+input, select, textarea{
+    font-size: 15px;
+    padding: 6px 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+}
+
+input:focus{
+    outline-color: red;
+}
+
+.btnContainer{
+    display: flex;
+    justify-content: end;
+    margin-top: 10px;
+}
+
+button{
+    background-color: red;
+    padding: 5px 10px;
+    border-radius: 8px;
+    color: white;
+    transition: 0.3s ease-in;
+}
+
+button:hover{
+    background-color: gray;
+    color: black;
+    border: 2px solid blueviolet;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
